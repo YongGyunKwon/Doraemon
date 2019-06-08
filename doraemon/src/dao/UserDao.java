@@ -27,9 +27,9 @@ public class UserDao {
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/UserID"; //db이름도 바꿔주고
+			String url = "jdbc:mysql://localhost:3306/doraemon"; //db이름도 바꿔주고
 			String user = "root"; //각자 설정한 아이디대로 바꿔주고
-			String pwd = "cs1234"; //각자 비밀번호 설정한대로 바꿔주고
+			String pwd = "110100"; //각자 비밀번호 설정한대로 바꿔주고
 			conn = DriverManager.getConnection(url,user,pwd);
 		}
 		catch(Exception e)
@@ -76,11 +76,11 @@ public class UserDao {
 		try
 		{
 			conn = connect();
-			sql = "insert into user(email,password,name,gender,date_Of_Birth,kakao_Id,phone_Number) values(?,?,?,?,?,?,?)";
+			sql = "insert into user(Userid,Password,Email) values(?,?,?)";
 			psmt = conn.prepareStatement(sql);
-			psmt.setString(1,user.getEmail());
+			psmt.setString(1,user.getName());
 			psmt.setString(2,user.getPassword());
-			psmt.setString(3,user.getName());
+			psmt.setString(3,user.getEmail());
 			result = psmt.executeUpdate();		    
 		}
 		catch(Exception e)

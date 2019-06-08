@@ -118,7 +118,7 @@ input {
 </head>
 <body>
 	<!-- login -->
-    <form mothod="post" action="">
+    <form mothod="post" action="userLogin.do">
   			<!-- character -->
            <svg id="ryan" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
             <path d="M0,150 C0,65 120,65 120,150" fill="" stroke="#99CCFF" stroke-width="2.5" />

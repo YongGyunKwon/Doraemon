@@ -18,7 +18,7 @@ public interface HttpUtil {
 	
 	public static void Login(HttpServletRequest request, HttpServletResponse response) {
 	      try {
-	         if(request.getSession().getAttribute("LoginUserNum") == null)
+	         //if(request.getSession().getAttribute("LoginUserNum") == null)
 	        	 forward(request, response, "login.jsp");         
 	        return;
 	      } catch (Exception e) {
@@ -26,13 +26,4 @@ public interface HttpUtil {
 	      }
 	   }
 	
-	public static void AdminLogin(HttpServletRequest request, HttpServletResponse response) {
-	      try {
-	         if(request.getSession().getAttribute("LoginAdmin") == null)
-	        	 forward(request, response, "login.jsp");         
-	        return;
-	      } catch (Exception e) {
-	         System.out.println("HttpUtil forward error 발생 : " + e);
-	      }
-	   }
 }

@@ -91,7 +91,7 @@
     <div class="container">
         <div class="item">
             <h1>REGISTRE HERE</h1>
-            <form>
+            <form method="post" action="userRegister.do">
                 <label class="leb">
                     
                     <label class="leb">Name</label><br>
