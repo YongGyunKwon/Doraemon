@@ -33,7 +33,7 @@
 	}
 	
 
-	else if(result==0){
+	else if(result==-1){
 		PrintWriter script=response.getWriter();
 		script.println("<script>");
 		script.println("alert('존재하지 않는 아이디')");
@@ -42,7 +42,7 @@
 	}
 	
 
-	else if(result==0){
+	else if(result==-2){
 		PrintWriter script=response.getWriter();
 		script.println("<script>");
 		script.println("alert('DB오류')");
