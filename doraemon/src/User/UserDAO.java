@@ -38,14 +38,14 @@ public class UserDAO {
 				if(rs.getString(1).equals(userPassword)) 
 					return 1; //로그인 성공
 				else
-					return 0;
+					return 0; //비밀번호 오류
 			
-		}
-		return -1; //아이디가 없음
+			}
+			return -1; //아이디가 없음
 		} catch(Exception e) {
-		e.printStackTrace();
-	}
-	return -2; //db오류
+			e.printStackTrace();
+		}
+		return -2; //db오류
 	}
 	
 	public int join(User user) {
@@ -56,6 +56,7 @@ public class UserDAO {
 			pstat.setString(2,user.getUserPassword());
 			pstat.setString(3,user.getUserName());
 			pstat.setString(4,user.getUserEmail());		
+			return pstat.executeUpdate();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

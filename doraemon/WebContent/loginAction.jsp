@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@page import="User.UserDAO" %>
 <%@page import="java.io.PrintWriter" %>
@@ -15,6 +15,8 @@
 </head>
 <body>
 <%
+	
+	
 	UserDAO userDAO=new UserDAO();
 	int result=userDAO.login(user.getUserID(),user.getUserPassword());
 	if(result==1){
