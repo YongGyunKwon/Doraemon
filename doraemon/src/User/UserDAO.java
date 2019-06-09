@@ -53,9 +53,9 @@ public class UserDAO {
 		try {
 			pstat=conn.prepareStatement(SQL);
 			pstat.setString(1,user.getUserID());
-			pstat.setString(1,user.getUserPassword());
-			pstat.setString(1,user.getUserName());
-			pstat.setString(1,user.getUserEmail());		
+			pstat.setString(2,user.getUserPassword());
+			pstat.setString(3,user.getUserName());
+			pstat.setString(4,user.getUserEmail());		
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
