@@ -118,7 +118,7 @@ input {
 </head>
 <body>
 	<!-- login -->
-    <form mothod="post" action="userLogin.do">
+    <form mothod="post" action="loginAction.jsp">
   			<!-- character -->
            <svg id="ryan" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
             <path d="M0,150 C0,65 120,65 120,150" fill="" stroke="#99CCFF" stroke-width="2.5" />
@@ -136,9 +136,9 @@ input {
               </g>          
   
         </svg>
-        <input type="text" id="email" name="email" placeholder="email@naver.com">
-        <input type="password" id="password" name="password" placeholder="Password">
-        <input type="submit" />
+        <input type="text" id="userID" name="userID" placeholder="ID">
+        <input type="password" id="userPassword" name="userPassword" placeholder="Password">
+        <input type="submit" value="LOGIN"/>
                 
         <a href="register.jsp">Register</a>
     </form>

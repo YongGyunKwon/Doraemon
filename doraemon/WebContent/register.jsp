@@ -94,16 +94,20 @@
             <form method="post" action="userRegister.do">
                 <label class="leb">
                     
-                    <label class="leb">Name</label><br>
-                    <input type="text" placeholder="Name" name="name" id="name" autocomplete="off" class="one">
+                    <label class="leb">ID</label><br>
+                    <input type="text" placeholder="ID" name="userID" id="name" autocomplete="off" class="one">
                     <br>
-                    <label class="leb">Email</label><br>
-                    <input type="text" placeholder="Email" name="email" id="email" autocomplete="off" class="one">
-                    
-                    <br>
+                     
                     <label class="leb">Password</label><br>
-                    <input type="password" placeholder="Password" class="one"><br>
-                    <div class="n">
+                    <input type="password" placeholder="Password" name ="userPassword" class="one"><br>
+                 
+                     <label class="leb">NAME</label><br>
+                    <input type="text" placeholder="Name" name="userName" id="name" autocomplete="off" class="one">
+                    <br>
+                     
+                    <label class="leb">Email</label><br>
+                    <input type="text" placeholder="Email" name="userEmail" id="email" autocomplete="off" class="one">
+                  
                         
                     <input type="submit" value="Register">
                     <a href="login.jsp">Go Login</a>
