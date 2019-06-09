@@ -15,17 +15,15 @@
 </head>
 <body>
 <%
-	
-	
 	UserDAO userDAO=new UserDAO();
 	int result=userDAO.login(user.getUserID(),user.getUserPassword());
 	if(result==1){
 		PrintWriter script=response.getWriter();
 		script.println("<script>");
-		script.println("location.href='index.jsp'");
+		script.println("alert('DB오류')");
+		script.println("history.back()");
 		script.println("</script>");
 	}
-	
 	else if(result==0){
 		PrintWriter script=response.getWriter();
 		script.println("<script>");
@@ -34,7 +32,6 @@
 		script.println("</script>");
 	}
 	
-
 	else if(result==-1){
 		PrintWriter script=response.getWriter();
 		script.println("<script>");
@@ -43,12 +40,11 @@
 		script.println("</script>");
 	}
 	
-
 	else if(result==-2){
+	
 		PrintWriter script=response.getWriter();
 		script.println("<script>");
-		script.println("alert('DB오류')");
-		script.println("history.back()");
+		script.println("location.href='index.jsp'");
 		script.println("</script>");
 	}
 	

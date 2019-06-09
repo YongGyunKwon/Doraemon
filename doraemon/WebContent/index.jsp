@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<script>
-		location.href="doraemon.html";
-		
-	</script>
+	
+<script>
+	location.href="doraemon.html";
+</script>		
+	
 </body>
 </html>
