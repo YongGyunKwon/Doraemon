@@ -140,7 +140,7 @@ public class UserDao {
 		{
 			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 			conn = connect();
-			sql = String.format("select * from user where email = %s", "\"" +user.getEmail() + "\"");
+			sql = String.format("select * from user where Email = %s", "\"" +user.getEmail() + "\"");
 			System.out.println(sql);
 			psmt = conn.prepareStatement(sql);		
 			rs = psmt.executeQuery();			
@@ -207,7 +207,4 @@ public class UserDao {
 		return list;
 	}
 
-	
-	
-	
 }
