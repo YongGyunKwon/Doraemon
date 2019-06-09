@@ -20,7 +20,7 @@
 	if(result==1){
 		PrintWriter script=response.getWriter();
 		script.println("<script>");
-		script.println("location.href='doraemon.html'");
+		script.println("location.href='index.jsp'");
 		script.println("</script>");
 	}
 	
